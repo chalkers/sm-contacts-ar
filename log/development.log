@@ -1,0 +1,314 @@
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 10:52:56) [GET]
+
+NoMethodError (undefined method `all' for Contact:Class):
+  app/controllers/contacts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (31.7ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:07:19) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 488ms (View: 212, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-05-20 11:07:22) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+
+ActionView::TemplateError (undefined method `name' for #<Contact:0x171dddc>) on line #8 of app/views/contacts/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :name %><br />
+8:     <%= f.text_field :name %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :email %><br />
+
+    app/views/contacts/new.html.erb:8
+    app/views/contacts/new.html.erb:3
+
+Rendered rescues/_trace (42.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:08:04) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 244ms (View: 2, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-05-20 11:08:06) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+
+ActionView::TemplateError (undefined method `home_number' for #<Contact:0x23b57fc>) on line #16 of app/views/contacts/new.html.erb:
+13:   </p>
+14:   <p>
+15:     <%= f.label :home_number %><br />
+16:     <%= f.text_field :home_number %>
+17:   </p>
+18:   <p>
+19:     <%= f.submit 'Create' %>
+
+    app/views/contacts/new.html.erb:16
+    app/views/contacts/new.html.erb:3
+
+Rendered rescues/_trace (46.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-05-20 11:08:13) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2009-05-20 11:08:19) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3adRJzXjrQluAsGC0b6UABgVbz0KDirBeV/AIt+Avzo=", "contact"=>{"name"=>"Andrew Chalkley", "home_number"=>"asdfhas", "email"=>"ad@asd.com"}}
+Redirected to http://localhost:3000/contacts/1
+Completed in 404ms (DB: 0) | 302 Found [http://localhost/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2009-05-20 11:08:19) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/contacts
+Rendering contacts/show
+Completed in 307ms (View: 27, DB: 0) | 200 OK [http://localhost/contacts/1]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:08:21) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 241ms (View: 4, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:08:49) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 237ms (View: 2, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:08:50) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 229ms (View: 2, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:09:01) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 231ms (View: 2, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:09:12) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 244ms (View: 3, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#destroy (for 127.0.0.1 at 2009-05-20 11:09:18) [DELETE]
+  Parameters: {"authenticity_token"=>"3adRJzXjrQluAsGC0b6UABgVbz0KDirBeV/AIt+Avzo=", "id"=>"2"}
+Redirected to http://localhost:3000/contacts
+Completed in 459ms (DB: 0) | 302 Found [http://localhost/contacts/2]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:09:19) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 232ms (View: 2, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-05-20 11:12:51) [GET]
+
+SyntaxError (/Users/andrew/course/sm-contacts-ar/app/controllers/contacts_controller.rb:15: syntax error, unexpected tASSOC, expecting '}'
+    @contact.load{:name=>"",:email=>"",:home_number=>""}
+                         ^):
+  
+
+Rendered rescues/_trace (26.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-05-20 11:13:04) [GET]
+
+SyntaxError (/Users/andrew/course/sm-contacts-ar/app/controllers/contacts_controller.rb:15: syntax error, unexpected tASSOC, expecting '}'
+    @contact.load {:name=>"",:email=>"",:home_number=>""}
+                          ^):
+  
+
+Rendered rescues/_trace (25.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-05-20 11:13:12) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2009-05-20 11:13:17) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3adRJzXjrQluAsGC0b6UABgVbz0KDirBeV/AIt+Avzo=", "contact"=>{"name"=>"Andrew Chalkley", "home_number"=>"asdfhas", "email"=>"ad@asd.com"}}
+Redirected to http://localhost:3000/contacts/3
+Completed in 385ms (DB: 0) | 302 Found [http://localhost/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2009-05-20 11:13:17) [GET]
+  Parameters: {"id"=>"3"}
+Rendering template within layouts/contacts
+Rendering contacts/show
+Completed in 239ms (View: 2, DB: 0) | 200 OK [http://localhost/contacts/3]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:13:19) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 250ms (View: 5, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-05-20 11:13:28) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:13:30) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 243ms (View: 5, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-05-20 11:13:37) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+
+ActionView::TemplateError (undefined method `name' for #<Contact:0x178dcb8>) on line #8 of app/views/contacts/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :name %><br />
+8:     <%= f.text_field :name %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :email %><br />
+
+    app/views/contacts/new.html.erb:8
+    app/views/contacts/new.html.erb:3
+
+Rendered rescues/_trace (39.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-05-20 11:13:42) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:14:40) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 238ms (View: 3, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:16:25) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 259ms (View: 4, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2009-05-20 11:16:27) [GET]
+  Parameters: {"id"=>"3"}
+Rendering template within layouts/contacts
+Rendering contacts/show
+Completed in 237ms (View: 3, DB: 0) | 200 OK [http://localhost/contacts/3]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:16:29) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 240ms (View: 3, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2009-05-20 11:16:31) [GET]
+  Parameters: {"id"=>"3"}
+Rendering template within layouts/contacts
+Rendering contacts/edit
+Completed in 254ms (View: 19, DB: 0) | 200 OK [http://localhost/contacts/3/edit]
+
+
+Processing ContactsController#update (for 127.0.0.1 at 2009-05-20 11:16:37) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"3adRJzXjrQluAsGC0b6UABgVbz0KDirBeV/AIt+Avzo=", "contact"=>{"name"=>"Andrew Chalkley", "home_number"=>"1234567890", "email"=>"ad@asd.com"}, "id"=>"3"}
+
+NoMethodError (undefined method `update_attributes' for #<Contact:0x16a8a8c>):
+  app/controllers/contacts_controller.rb:39:in `update'
+
+Rendered rescues/_trace (37.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:17:28) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 245ms (View: 8, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:21:51) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 277ms (View: 45, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2009-05-20 11:21:53) [GET]
+  Parameters: {"id"=>"3"}
+Rendering template within layouts/contacts
+Rendering contacts/edit
+Completed in 244ms (View: 8, DB: 0) | 200 OK [http://localhost/contacts/3/edit]
+
+
+Processing ContactsController#update (for 127.0.0.1 at 2009-05-20 11:21:57) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"3adRJzXjrQluAsGC0b6UABgVbz0KDirBeV/AIt+Avzo=", "contact"=>{"name"=>"Andrew Chalkley", "home_number"=>"123456780", "email"=>"ad@asd.com"}, "id"=>"3"}
+Redirected to http://localhost:3000/contacts/3
+Completed in 571ms (DB: 0) | 302 Found [http://localhost/contacts/3]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2009-05-20 11:21:57) [GET]
+  Parameters: {"id"=>"3"}
+Rendering template within layouts/contacts
+Rendering contacts/show
+Completed in 310ms (View: 7, DB: 0) | 200 OK [http://localhost/contacts/3]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:22:00) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 236ms (View: 2, DB: 0) | 200 OK [http://localhost/contacts]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-20 11:31:00) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:32:16) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 256ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-05-20 11:34:11) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 320ms (View: 22, DB: 0) | 200 OK [http://localhost/]
